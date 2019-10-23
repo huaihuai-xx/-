@@ -3,8 +3,10 @@ $.ajax({
     type: 'get',
     url: '/posts/recommend',
     success: function(response) {
-        // console.log(response);
-        // 为了将模板变成公共的，所以将模板写在了js文件中
+        console.log(response);
+
+
+        // // 为了将模板变成公共的，所以将模板写在了js文件中
         var recommendTpl = `
         	{{each data}}
         	<li>
